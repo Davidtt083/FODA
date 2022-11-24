@@ -14,22 +14,22 @@
     <script src="js\index.js"></script>
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/c4b7d7f020.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="very-specific-design" id="very-specific-design">
-    <div class="container">
-        <div class="content__main">
-            <img src="img-fod.png" id="img_cover" title="click me">
-        </div>
-        <!--<div class="conte-img"><img src="images\img-fod.png" class="img-fluid" alt="..."></div>-->
-        <div class="conte-img">
-            <div class="conte-boton"><button type="button" class="btn" data-bs-toggle="modal"
-                    data-bs-target="#exampleModalFullscreen"></button></div>
+        <div class="containr">
+            <div class="conte-img">
+                <div class="conte-boton"><button type="button" class="btn" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalFullscreen"></button></div>
+            </div>
+
+            <div class="content-b"><button id="go-button" onclick="toggleFullScreen()"><i
+                        class="fa-solid fa-expand"></i></button></div>
         </div>
     </div>
-</div>
-    
+
 
     <div class="modal fade" id="exampleModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel"
         style="display: none;" aria-hidden="true">
@@ -40,10 +40,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                        <video class="myvideo" loop autoplay muted>
-                            <source src="video\foda.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                    <video class="myvideo" loop autoplay muted>
+                        <source src="video\foda.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -52,12 +52,30 @@
         </div>
     </div>
 
+
+
 </body>
- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
- <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-	<script src="./script.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="./script.js"></script>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src="./script.js"></script>
+
 </html>
 
-<div class="content__main">
-    <img src="img-fod.png" id="img_cover" title="click me">
-</div>
+
+<script>
+    function toggleFullScreen() {
+        var doc = window.document;
+        var docEl = doc.documentElement;
+
+        var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+        var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+
+        if (!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+            requestFullScreen.call(docEl);
+        }
+        else {
+            cancelFullScreen.call(doc);
+        }
+    }
+</script>

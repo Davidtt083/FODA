@@ -1,103 +1,70 @@
-.container {
-    text-align: center;
+.containr{
+  text-align: center;
 }
 
 .conte-img {
-    height: 100vh;
-  
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-attachment: fixed;
-    background-position: center;
+  top: 0;
+  margin-top: 50px;
+  width: 1920px;
+  height: 1280px;
+  background-image: url(img-fod.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .conte-boton {
-    position: absolute;
-    margin-top: -121px;
-    width: 100%;
-    height: 8em;
-    z-index: 999;
+  position: absolute;
+  width: 100%;
+  height: 6em;
+  margin-top: 1177px;
 }
 
 .btn {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(red, green, blue, 0);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(red, green, blue, 1);
 }
 
 .conte-video {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 .myvideo {
- width: 100%;
-    max-height: 100%;
+width: 100%;
+  max-height: 100%;
 }
 
-
-
-.tiles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .tile {
-    position: relative;
-/*     float: left; */
-    width: 100%;
-    height: 100%;
-/*     overflow: hidden; */
-  }
-
-  .photo {
-    position: absolute;
-    top: 179px;
-    left: 732px;
-    width: 732px;
-    height: 1113px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    transition: transform .1s ease-out;
-  }
-
-  .txt {
-    position: absolute;
-    z-index: 2;
-    right: 0;
-    bottom: 10%;
-    left: 0;
-    font-family: 'Roboto Slab', serif;
-    font-size: 9px;
-    line-height: 12px;
-    text-align: center;
-    cursor: default;
-  }
-
-  .x {
-    font-size: 32px;
-    line-height: 32px;
-  }
-
-  
-.content__main {
-  width: 90%;
-  max-width: 600px;
-  background: #dfdfdf;
-  border-radius: 5px;
-  overflow: hidden;
-  margin: 50px auto;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
-.content__main img {
-  display: block;
+.content-b {
+  position: absolute;
   width: 100%;
-  position: relative;
+  text-align: right;
+  transition: all 2s ease;
 }
-.content__main:hover {
-  cursor: zoom-in;
+
+#go-button {
+  background-color:rgba(255, 106, 0, 0.9);
+  cursor: pointer;
+  position: absolute;
+  margin-top: -1216px;
+  margin-left: -491px;
+  width: 5%;
+  height: 2em;
+  font-size: 2vw;
+  border: 0px;
+  transform: translateX(-1.1em);
+  transition: all 1s ease;
+  
+}
+
+#go-button:hover{			
+  width: 5.4%;
+  height: 2.2em;
+  font-size: 2.2vw;
+  background-color:rgba(255, 106, 0, 0.5);
+}
+i {
+  color: #FFFF;
 }

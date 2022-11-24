@@ -4,7 +4,7 @@ body {
 
 .very-specific-design {
   width: 1920px;
-  height: 739px;
+  height: 100vh;
   padding: 50px;
   text-align: center;
   background:rgba(0, 0, 0, 0);
@@ -29,13 +29,13 @@ body {
   font-size: 5rem;
 }
 
-img {
+/*img {
   margin-top: 24px;
   margin-left: -16px;
   width: 90%;
   height: auto;
   z-index: 9;
-}
+}*/
 
 .pant {
   margin-top: 11px;
@@ -101,7 +101,7 @@ img {
 }
 
 .button:hover {
-  background:rgba(255, 106, 0, 0.7);
+
 }
 
 .overlay {
