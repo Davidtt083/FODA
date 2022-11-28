@@ -1,4 +1,4 @@
-.containr{
+.containr {
   text-align: center;
   margin-top: 145px !important;
 }
@@ -34,39 +34,45 @@
 }
 
 .myvideo {
-width: 100%;
+  width: 100%;
   max-height: 100%;
 }
 
 .content-b {
   position: absolute;
-  width: 100%;
+  width: 80%;
+  height: 4em;
   text-align: right;
   transition: all 2s ease;
-  margin-top: 151px;
+  top: 0;
+  left: 0;
 }
 
 #go-button {
-  background-color:rgba(255, 106, 0, 0.9);
+  background-color: rgba(255, 106, 0, 0.9);
   cursor: pointer;
   position: absolute;
-  margin-top: -1216px;
-  margin-left: -491px;
-  width: 4em;
-  height: 4em;
+  top: 0;
+  width: 3em;
+  height: 3em;
   font-size: 2vw;
   border: 0px;
   transform: translateX(-1.1em);
   transition: all 1s ease;
-  
+
 }
 
-#go-button:hover{			
+#go-button:hover {
   width: 4.5em;
   height: 4.5em;
   font-size: 2.2vw;
-  background-color:rgba(255, 106, 0, 0.5);
+  background-color: rgba(255, 106, 0, 0.5);
 }
+
 i {
   color: #FFFF;
+}
+
+.fa-solid {
+  font-size: 2em;
 }
