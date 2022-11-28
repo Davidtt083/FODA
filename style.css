@@ -1,10 +1,10 @@
 body {
-
+height: 90vh;
 }
 
 .very-specific-design {
   width: 1920px;
-  height: 100vh;
+  height: 1280px;
   padding: 50px;
   text-align: center;
   background:rgba(0, 0, 0, 0);

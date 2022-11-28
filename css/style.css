@@ -1,12 +1,13 @@
 .containr{
   text-align: center;
+  margin-top: 145px !important;
 }
 
 .conte-img {
   top: 0;
-  margin-top: 50px;
+  margin-top: 70px;
   width: 1920px;
-  height: 1280px;
+  height: 143vh;
   background-image: url(img-fod.png);
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -42,6 +43,7 @@ width: 100%;
   width: 100%;
   text-align: right;
   transition: all 2s ease;
+  margin-top: 151px;
 }
 
 #go-button {
