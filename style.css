@@ -5,12 +5,12 @@ height: 90vh;
 .very-specific-design {
   width: 1920px;
   height: 1280px;
-  padding: 50px;
+  padding: 0px;
   text-align: center;
   background:rgba(0, 0, 0, 0);
   position: relative;
   left: 50%;
-  top: -50px;
+  top: -25px;
   -webkit-transform: translate3d(-50%, 0, 0);
   transform: translate3d(-50%, 0, 0);
   -webkit-transform-origin: center top;
